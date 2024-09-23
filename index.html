@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML5 Julián</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <div class="container">
+	<div class="row justify-content-center mt-5">
+			<div class="card p-0">
+				<div class="card-header">
+					<h3 class="mb-0">Payment form example</h3>
+				</div>
+				<div class="row col-12 p-4 pe-0">
+					<div id="error-msg" class="alert alert-danger">Some fields are missing</div>
+				</div>
+				<div class="card-body">
+			     <form  method="post" action="#">
+					<div class="row">
+						<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+							<label for="exampleAccount">Card #</label> 
+							<input class="form-control" id="exampleAccount" placeholder="XXXXXXXXXXXXXXXX" type="text">
+						</div>
+						<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+							<label for="exampleCtrl">CVC #</label> 
+							<input class="form-control" id="exampleCtrl" placeholder="000" type="text">
+						</div>
+						<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+							<label for="exampleAmount">Amount</label>
+							<div class="input-group">
+								<span class="input-group-text">$</span>
+								<input class="form-control" id="exampleAmount" placeholder="Amount" type="number">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+								<label for="exampleFirst">First Name</label> 
+								<input class="form-control" id="exampleFirst" type="text">
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+								<label for="exampleLast">Last Name</label> 
+								<input class="form-control" id="exampleLast" type="text">
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+								<label for="exampleCity">City</label> <input class="form-control" id="exampleCity" type="text">
+							</div>
+							<div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+								<label for="inputState">State</label>
+								<select id="inputState" class="form-select">
+								<option class="text-white bg-warning">
+									Pick a state
+								</option>
+								</option>
+								<option value="AL">
+									Almería
+								</option>
+								<option value="GR">
+									Granada
+								</option>
+								<option value="ML">
+									Málaga
+								</option>
+								<option value="JN">
+									Jaén
+								</option>
+								<option value="CB">
+									Córdoba
+								</option>
+								<option value="CD">
+									Cádiz
+								</option>
+								<option value="SV">
+									Sevilla
+								</option>
+								<option value="HV">
+									Huelva
+								</option>
+								</select>
+							</div>
+							<div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+								<label for="exampleZip">Postal Code</label> 
+								<input class="form-control" id="exampleZip" type="text">
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pb-6">
+								<p>We accept:</p>
+								<div class="btn-group" data-toggle="buttons">
+									<label class="btn btn-secondary">
+										<input autocomplete="off" checked id="blue" name="options" type="radio">
+										<span class="fa-brands fa-cc-visa"></span>
+									</label> 
+									<label class="btn btn-secondary">
+										<input autocomplete="off" id="red" name="options" type="radio">
+										<span class="fa-brands fa-cc-mastercard"></span>
+									</label> 
+									<label class="btn btn-secondary">
+										<input autocomplete="off" id="green" name="options" type="radio">
+										<span class="fa-brands fa-cc-paypal"></span>
+									</label> 
+									<label class="btn btn-secondary">
+										<input autocomplete="off" id="yellow" name="options" type="radio">
+										<span class="fa-brands fa-cc-apple-pay"></span>
+									</label> 
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+								<label for="exampleMessage">Message</label> 
+								<textarea class="form-control" id="complexExampleMessage" rows="3"></textarea> 
+								<small class="text-muted">Add any notes here.</small>
+							</div>
+
+					</div>
+
+			</form>
+				</div>
+				<div class="card-footer">
+					<div class="float-left">
+			  <button class="btn btn-secondary" type="reset">Cancel</button> 
+						<button id="sendForm" class="btn btn-primary" type="button" />Send</button>
+					</div>
+				</div>
+			</div>
+	</div>
+ </div>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

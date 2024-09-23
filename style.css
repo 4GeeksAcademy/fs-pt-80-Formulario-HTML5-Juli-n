@@ -1,0 +1,18 @@
+body {
+	margin: 0;
+	background-color: white;
+}
+.card-header{
+  background: #c9ddff;
+}
+
+.float-left{
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+}
+
+input-group-addon{
+    display: contents;
+    gap: 5px;
+}
